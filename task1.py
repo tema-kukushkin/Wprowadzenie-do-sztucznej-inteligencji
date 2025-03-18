@@ -43,7 +43,7 @@ def ackley_function(x):
     return -a * np.exp(-b * np.sqrt(np.sum(x**2) / d)) - np.exp(np.sum(np.cos(c*x)) / d) + a + np.exp(1)
 
 # Method parameters
-params = SolverParameters(learning_rate=0.001, max_iterations=10000, tolerance=1e-6)  
+params = SolverParameters(learning_rate=0.0001, max_iterations=10000, tolerance=1e-6)  
 x0 = [-1.2, 1.0]
 
 #Run gradient descent for each function
